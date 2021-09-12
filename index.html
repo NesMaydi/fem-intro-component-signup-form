@@ -1,42 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Intro component with sign up form</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
 
-  Learn to code by watching others
+    <title>Frontend Mentor | Intro component with sign up form</title>
+  </head>
+  <body>
+    <main>
+      <section id="title-intro" class="white-color">
+        <h1 id="title">Learn to code by watching others</h1>
 
-  See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
-  but understanding how developers think is invaluable. 
+        <p id="intro">
+          See how experienced developers solve problems in real-time. Watching
+          scripted tutorials is great, but understanding how developers think is
+          invaluable.
+        </p>
+      </section>
 
-  Try it free 7 days then $20/mo. thereafter
+      <section id="trial-form">
+        <button id="trial-btn" class="white-color">
+          <span id="trial-bold"> Try it free 7 days </span>
+          then $20/mo. thereafter
+        </button>
 
-  First Name 
-  Last Name 
-  Email Address
-  Password
+        <form action="#" id="subscribe-form" novalidate>
+          <div class="input-field">
+            <input type="text" class="form-info" placeholder="First Name" />
+            <span class="error-logo">
+              <img src="images/icon-error.svg" alt="error-logo" />
+            </span>
+            <legend class="txt-error">First Name cannot be empty</legend>
+          </div>
 
-  Claim your free trial 
+          <div class="input-field">
+            <input
+              type="text"
+              class="form-info"
+              placeholder="
+Last Name "
+            />
+            <span class="error-logo">
+              <img src="images/icon-error.svg" alt="error-logo" />
+            </span>
+            <legend class="txt-error">Last Name cannot be empty</legend>
+          </div>
+          <div class="input-field">
+            <input
+              type="email"
+              class="form-info"
+              placeholder="
+Email Address"
+            />
+            <span class="error-logo">
+              <img src="images/icon-error.svg" alt="error-logo" />
+            </span>
+            <legend class="txt-error">Email cannot be empty</legend>
+          </div>
+          <div class="input-field">
+            <input
+              type="password"
+              class="form-info"
+              placeholder="
+Password"
+            /><span class="error-logo">
+              <img src="images/icon-error.svg" alt="error-logo" />
+            </span>
+            <legend class="txt-error">Password cannot be empty</legend>
+          </div>
+          <button id="claim-btn" class="white-color">
+            Claim your free trial
+          </button>
+          <legend id="legend">
+            By clicking the button, you are agreeing to our
+            <span id="terms-services"> Terms and Services </span>
+          </legend>
+        </form>
+      </section>
+    </main>
 
-  By clicking the button, you are agreeing to our Terms and Services
-  
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
-</body>
+    <footer>
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Your Name Here</a>.
+      </p>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
 </html>
